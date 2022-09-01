@@ -3,10 +3,15 @@
 namespace MaxList
 {
 
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            if (args is null)
+            {
+                throw new ArgumentNullException(nameof(args));
+            }
+
             var numbers = new List<int>()
             { 107, 92, 3, 46, 5096, 666, 85 };
 
