@@ -7,7 +7,7 @@ namespace MaxList
     {
         public static void Main(string[] args)
         {
-            if (args is null)
+            if (args == null)
             {
                 throw new ArgumentNullException(nameof(args));
             }
@@ -17,7 +17,7 @@ namespace MaxList
 
             int maxNumber = numbers.Max();
 
-            Console.WriteLine("The largest number in the list is: " + maxNumber);
+            Console.WriteLine($"The largest number in the list is: {maxNumber}");
         }
     }
 }
